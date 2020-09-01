@@ -56,13 +56,6 @@ ingredients:
             - une_tune_sex_age_dur_nb
 
     -
-        id: ilo-labour-cost
-        dataset: open-numbers/ddf--ilo--ilostat
-        key: ref_area, classif1, classif2, time
-        value:
-            - lac_4hrl_eco_cur_nb
-
-    -
         id: ilo-population
         dataset: open-numbers/ddf--ilo--ilostat
         key: ref_area, sex, classif1, time
@@ -82,6 +75,7 @@ ingredients:
             - emp_tsrv_noc_rt
             - gdp_205u_noc_nb
             - how_temp_noc_nb
+            - lac_4hpt_noc_nb
 
     -
         id: ilo-nag-indicators
@@ -453,53 +447,6 @@ cooking:
             options:
                 dictionary: indicators_ilostat_to_sg.json
             result: ilo-long_term-unemployment-final
-
-        # group: labour cost
-        -
-            procedure: filter
-            ingredients:
-                - ilo-labour-cost
-            options:
-                row:
-                    classif1:
-                        $in:
-                            - eco_aggregate_total
-                    classif2:
-                        $in:
-                            - cur_type_ppp
-            result: ilo-labour-cost-filtered
-
-        -
-            procedure: flatten
-            ingredients:
-                - ilo-labour-cost-filtered
-            options:
-                flatten_dimensions:
-                    - classif1
-                    - classif2
-                dictionary:
-                    "*": "{concept}"
-            result: ilo-labour-cost-filtered-flattened
-
-        -
-            procedure: translate_column
-            ingredients:
-                - ilo-labour-cost-filtered-flattened
-            options:
-                column: ref_area
-                dictionary:
-                    base: ilo-ref_area-aligned
-                    key: ref_area
-                    value: ref_area_new
-            result: ilo-labour-cost-filtered-flattened-area-translated
-
-        -
-            procedure: translate_header
-            ingredients:
-                - ilo-labour-cost-filtered-flattened-area-translated
-            options:
-                dictionary: indicators_ilostat_to_sg.json
-            result: ilo-labour-cost-final
 
         # group: noc
         -
