@@ -553,7 +553,6 @@ cooking:
                 - ilo-unemployment-rate-final
                 - ilo-employment-state-final
                 - ilo-nag-indicators-final
-                - ilo-labour-cost-final
             result: ilo-datapoints-final
 
     concepts:
