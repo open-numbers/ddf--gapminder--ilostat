@@ -53,5 +53,5 @@
   "sex_t_age_aggregate_yge65_eap_2wap_sex_age_rt": "aged_65plus_labour_force_participation_rate_percent",
   "sex_t_age_ythadult_y15_64_eap_2wap_sex_age_rt": "aged_15_64_labour_force_participation_rate_percent",
   "sex_t_age_ythadult_yge15_eap_2wap_sex_age_rt": "aged_15plus_labour_force_participation_rate_percent",
-  "lac_4hrl_eco_cur_nb": "hourly_labour_cost_constant_2011_usd"
+  "lac_4hpt_noc_nb": "hourly_labour_cost_constant_2011_usd"
 }
