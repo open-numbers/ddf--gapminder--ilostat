@@ -83,8 +83,6 @@ salaried_workers_percent_of_non_agricultural_employment,,measure,,,,,,,Salaried 
 scales,,string,,,,,,,Scales,,,,,,,_none,
 self_employed_percent_of_employment,,measure,,,,,,,Self Employed Percent Of Employment,,,,,,,,
 service_workers_percent_of_employment,,measure,,,,,,,Service Workers Percent Of Employment,,,,,,,,
-sex_o_age_aggregate_y25_54_une_deap_sex_age_rt,,measure,,,,,,,Sex O Age Aggregate Y25 54 Une Deap Sex Age Rt,,,,,,,,
-sex_o_age_ythadult_yge15_une_deap_sex_age_rt,,measure,,,,,,,Sex O Age Ythadult Yge15 Une Deap Sex Age Rt,,,,,,,,
 shape_lores_svg,,string,low resolution,,,,,,SVG shape of geographic area,,,,,,,_none,
 source,,string,,,,,,,Source,,,,,,,_none,
 source_long,,string,,,,,,,Source Long Text,,,,,,,_none,

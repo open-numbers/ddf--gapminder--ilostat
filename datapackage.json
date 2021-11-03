@@ -9,7 +9,7 @@
     "license": "",
     "id": "ilostat-sg",
     "translations": [],
-    "created": "2021-11-02T07:43:21.460465+00:00",
+    "created": "2021-11-03T07:51:09.612120+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
@@ -1242,48 +1242,6 @@
                     },
                     {
                         "name": "service_workers_percent_of_employment"
-                    }
-                ],
-                "primaryKey": [
-                    "geo",
-                    "time"
-                ]
-            }
-        },
-        {
-            "name": "ddf--datapoints--sex_o_age_aggregate_y25_54_une_deap_sex_age_rt--by--geo--time",
-            "path": "ddf--datapoints--sex_o_age_aggregate_y25_54_une_deap_sex_age_rt--by--geo--time.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "geo"
-                    },
-                    {
-                        "name": "time"
-                    },
-                    {
-                        "name": "sex_o_age_aggregate_y25_54_une_deap_sex_age_rt"
-                    }
-                ],
-                "primaryKey": [
-                    "geo",
-                    "time"
-                ]
-            }
-        },
-        {
-            "name": "ddf--datapoints--sex_o_age_ythadult_yge15_une_deap_sex_age_rt--by--geo--time",
-            "path": "ddf--datapoints--sex_o_age_ythadult_yge15_une_deap_sex_age_rt--by--geo--time.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "geo"
-                    },
-                    {
-                        "name": "time"
-                    },
-                    {
-                        "name": "sex_o_age_ythadult_yge15_une_deap_sex_age_rt"
                     }
                 ],
                 "primaryKey": [
@@ -4020,46 +3978,6 @@
                 "value": "service_workers_percent_of_employment",
                 "resources": [
                     "ddf--datapoints--service_workers_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country",
-                    "time"
-                ],
-                "value": "sex_o_age_aggregate_y25_54_une_deap_sex_age_rt",
-                "resources": [
-                    "ddf--datapoints--sex_o_age_aggregate_y25_54_une_deap_sex_age_rt--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "sex_o_age_aggregate_y25_54_une_deap_sex_age_rt",
-                "resources": [
-                    "ddf--datapoints--sex_o_age_aggregate_y25_54_une_deap_sex_age_rt--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country",
-                    "time"
-                ],
-                "value": "sex_o_age_ythadult_yge15_une_deap_sex_age_rt",
-                "resources": [
-                    "ddf--datapoints--sex_o_age_ythadult_yge15_une_deap_sex_age_rt--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "sex_o_age_ythadult_yge15_une_deap_sex_age_rt",
-                "resources": [
-                    "ddf--datapoints--sex_o_age_ythadult_yge15_une_deap_sex_age_rt--by--geo--time"
                 ]
             },
             {
