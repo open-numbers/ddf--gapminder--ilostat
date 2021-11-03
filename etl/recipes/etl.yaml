@@ -33,13 +33,13 @@ ingredients:
         dataset: open-numbers/ddf--ilo--ilostat
         key: ref_area, sex, classif1, time
         value:
-            - emp_2emp_sex_eco_dt
+            - emp_2emp_sex_eco_nb
     -
         id: ilo-employment-state
         dataset: open-numbers/ddf--ilo--ilostat
         key: ref_area, sex, classif1, time
         value:
-            - emp_2emp_sex_ste_dt
+            - emp_2emp_sex_ste_nb
 
     -
         id: ilo-unemployment-rate
@@ -65,17 +65,9 @@ ingredients:
     -
         id: ilo-noc-indicators
         dataset: open-numbers/ddf--ilo--ilostat
-        key: ref_area, classif1, time
+        key: ref_area, time
         value:
-            - emp_fcfw_noc_rt
-            - emp_mcfw_noc_rt
-            - emp_tagr_noc_rt
-            - emp_tcfw_noc_rt
-            - emp_tind_noc_rt
-            - emp_tsrv_noc_rt
             - gdp_205u_noc_nb
-            - how_temp_noc_nb
-            - lac_4hpt_noc_nb
 
     -
         id: ilo-nag-indicators
@@ -85,6 +77,20 @@ ingredients:
             - ees_fnag_noc_rt
             - ees_mnag_noc_rt
             - ees_tnag_noc_rt
+
+    -
+        id: ilo-hours-worked-indicator
+        dataset: open-numbers/ddf--ilo--ilostat
+        key: ref_area, time, sex, classif1
+        value:
+            - how_temp_sex_eco_nb
+
+    -
+        id: ilo-hourly-labour-cost-indicator
+        dataset: open-numbers/ddf--ilo--ilostat
+        key: ref_area, time, classif1, classif2
+        value:
+            - lac_4hrl_eco_cur_nb
 
     -
         id: ilo-ref_area
@@ -109,6 +115,100 @@ cooking:
                     key: synonym
                     value: geo
             result: ilo-ref_area-aligned
+
+        # group: hours actually worked
+        -
+            procedure: filter
+            ingredients:
+                - ilo-hours-worked-indicator
+            options:
+                row:
+                    sex:
+                        $in:
+                            - sex_t
+                    classif1:
+                        $in:
+                            - eco_aggregate_total
+            result: ilo-hours-worked-indicator-total
+
+        -
+            procedure: flatten
+            ingredients:
+                - ilo-hours-worked-indicator-total
+            options:
+                flatten_dimensions:
+                    - classif1
+                    - sex
+                dictionary:
+                    "*": "{concept}"
+            result: ilo-hours-worked-indicator-total-flattened
+
+        -
+            procedure: translate_column
+            ingredients:
+                - ilo-hours-worked-indicator-total-flattened
+            options:
+                column: ref_area
+                dictionary:
+                    base: ilo-ref_area-aligned
+                    key: ref_area
+                    value: ref_area_new
+            result: ilo-hours-worked-indicator-total-flattened-aligned
+
+        -
+            procedure: translate_header
+            ingredients:
+                - ilo-hours-worked-indicator-total-flattened-aligned
+            options:
+                dictionary: indicators_ilostat_to_sg.json
+            result: hours-worked-indicator-datapoints-final
+
+        # group: mean labour cost
+        -
+            procedure: filter
+            ingredients:
+                - ilo-hourly-labour-cost-indicator
+            options:
+                row:
+                    classif1:
+                        $in:
+                            - eco_aggregate_total
+                    classif2:
+                        $in:
+                            - cur_type_ppp
+            result: ilo-hourly-labour-cost-indicator-total-ppp
+
+        -
+            procedure: flatten
+            ingredients:
+                - ilo-hourly-labour-cost-indicator-total-ppp
+            options:
+                flatten_dimensions:
+                    - classif1
+                    - classif2
+                dictionary:
+                    "*": "{concept}"
+            result: ilo-hourly-labour-cost-indicator-total-ppp-flattened
+
+        -
+            procedure: translate_column
+            ingredients:
+                - ilo-hourly-labour-cost-indicator-total-ppp-flattened
+            options:
+                column: ref_area
+                dictionary:
+                    base: ilo-ref_area-aligned
+                    key: ref_area
+                    value: ref_area_new
+            result: ilo-hourly-labour-cost-indicator-total-ppp-flattened-aligned
+
+        -
+            procedure: translate_header
+            ingredients:
+                - ilo-hourly-labour-cost-indicator-total-ppp-flattened-aligned
+            options:
+                dictionary: indicators_ilostat_to_sg.json
+            result: hourly-labour-cost-indicator-datapoints-final
 
         # group: employment-rate
         -
@@ -169,6 +269,9 @@ cooking:
                             - age_ythadult_yge15   # 15+
                             - age_aggregate_y25_54  # 25-54
                             - age_aggregate_yge65   # 65+
+                    sex:
+                        $nin:
+                            - sex_o   # don't include "Other" sex
             result: ilo-labour-force-part-rate-filtered
         -
             procedure: flatten
@@ -214,17 +317,13 @@ cooking:
                             - eco_sector_agr
                             - eco_sector_ind
                             - eco_sector_ser
-                    sex:
-                        # don't keep total because there is a separated
-                        # indicator for total
-                        $nin:
-                            - sex_t
-            result: ilo-employment-distribution-filtered
+                            - eco_sector_total
+            result: ilo-employment-distribution-sectors
 
         -
             procedure: flatten
             ingredients:
-                - ilo-employment-distribution-filtered
+                - ilo-employment-distribution-sectors
             options:
                 flatten_dimensions:
                     - classif1
@@ -234,9 +333,43 @@ cooking:
             result: ilo-employment-distribution-flattened
 
         -
-            procedure: translate_column
+            procedure: run_op
             ingredients:
                 - ilo-employment-distribution-flattened
+            options:
+                op:
+                    sex_f_eco_sector_agr_emp_2emp_sex_eco_nb: sex_f_eco_sector_agr_emp_2emp_sex_eco_nb / sex_f_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_f_eco_sector_ind_emp_2emp_sex_eco_nb: sex_f_eco_sector_ind_emp_2emp_sex_eco_nb / sex_f_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_f_eco_sector_ser_emp_2emp_sex_eco_nb: sex_f_eco_sector_ser_emp_2emp_sex_eco_nb / sex_f_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_m_eco_sector_agr_emp_2emp_sex_eco_nb: sex_m_eco_sector_agr_emp_2emp_sex_eco_nb / sex_m_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_m_eco_sector_ind_emp_2emp_sex_eco_nb: sex_m_eco_sector_ind_emp_2emp_sex_eco_nb / sex_m_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_m_eco_sector_ser_emp_2emp_sex_eco_nb: sex_m_eco_sector_ser_emp_2emp_sex_eco_nb / sex_m_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_t_eco_sector_agr_emp_2emp_sex_eco_nb: sex_t_eco_sector_agr_emp_2emp_sex_eco_nb / sex_t_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_t_eco_sector_ind_emp_2emp_sex_eco_nb: sex_t_eco_sector_ind_emp_2emp_sex_eco_nb / sex_t_eco_sector_total_emp_2emp_sex_eco_nb * 100
+                    sex_t_eco_sector_ser_emp_2emp_sex_eco_nb: sex_t_eco_sector_ser_emp_2emp_sex_eco_nb / sex_t_eco_sector_total_emp_2emp_sex_eco_nb * 100
+            result: ilo-employment-distribution-flattened-op
+
+        -
+            procedure: filter
+            ingredients:
+                - ilo-employment-distribution-flattened-op
+            options:
+                item:
+                    - sex_f_eco_sector_agr_emp_2emp_sex_eco_nb
+                    - sex_f_eco_sector_ind_emp_2emp_sex_eco_nb
+                    - sex_f_eco_sector_ser_emp_2emp_sex_eco_nb
+                    - sex_m_eco_sector_agr_emp_2emp_sex_eco_nb
+                    - sex_m_eco_sector_ind_emp_2emp_sex_eco_nb
+                    - sex_m_eco_sector_ser_emp_2emp_sex_eco_nb
+                    - sex_t_eco_sector_agr_emp_2emp_sex_eco_nb
+                    - sex_t_eco_sector_ind_emp_2emp_sex_eco_nb
+                    - sex_t_eco_sector_ser_emp_2emp_sex_eco_nb
+            result: ilo-employment-distribution-flattened-op-filtered
+
+        -
+            procedure: translate_column
+            ingredients:
+                - ilo-employment-distribution-flattened-op-filtered
             options:
                 column: ref_area
                 dictionary:
@@ -263,6 +396,8 @@ cooking:
                     classif1:
                         $in:
                             - ste_aggregate_slf
+                            - ste_aggregate_total
+                            - ste_icse93_5
             result: ilo-employment-state-filtered
         -
             procedure: flatten
@@ -275,10 +410,39 @@ cooking:
                 dictionary:
                     "*": "{sex}_{classif1}_{concept}"
             result: ilo-employment-state-flattened
+
+        -
+            procedure: run_op
+            ingredients:
+                - ilo-employment-state-flattened
+            options:
+                op:
+                    sex_f_ste_aggregate_slf_emp_2emp_sex_ste_nb: sex_f_ste_aggregate_slf_emp_2emp_sex_ste_nb / sex_f_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+                    sex_m_ste_aggregate_slf_emp_2emp_sex_ste_nb: sex_m_ste_aggregate_slf_emp_2emp_sex_ste_nb / sex_m_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+                    sex_t_ste_aggregate_slf_emp_2emp_sex_ste_nb: sex_t_ste_aggregate_slf_emp_2emp_sex_ste_nb / sex_t_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+                    sex_f_ste_icse93_5_emp_2emp_sex_ste_nb: sex_f_ste_icse93_5_emp_2emp_sex_ste_nb / sex_f_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+                    sex_m_ste_icse93_5_emp_2emp_sex_ste_nb: sex_m_ste_icse93_5_emp_2emp_sex_ste_nb / sex_m_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+                    sex_t_ste_icse93_5_emp_2emp_sex_ste_nb: sex_t_ste_icse93_5_emp_2emp_sex_ste_nb / sex_t_ste_aggregate_total_emp_2emp_sex_ste_nb * 100
+            result: ilo-employment-state-flattened-op
+
+        -
+            procedure: filter
+            ingredients:
+                - ilo-employment-state-flattened-op
+            options:
+                item:
+                    - sex_f_ste_aggregate_slf_emp_2emp_sex_ste_nb
+                    - sex_m_ste_aggregate_slf_emp_2emp_sex_ste_nb
+                    - sex_t_ste_aggregate_slf_emp_2emp_sex_ste_nb
+                    - sex_f_ste_icse93_5_emp_2emp_sex_ste_nb
+                    - sex_m_ste_icse93_5_emp_2emp_sex_ste_nb
+                    - sex_t_ste_icse93_5_emp_2emp_sex_ste_nb
+            result: ilo-employment-state-flattened-filtered
+
         -
             procedure: translate_column
             ingredients:
-                - ilo-employment-state-flattened
+                - ilo-employment-state-flattened-filtered
             options:
                 column: ref_area
                 dictionary:
@@ -309,6 +473,9 @@ cooking:
                             - age_aggregate_y25_54
                             - age_aggregate_y55_64
                             - age_aggregate_yge65
+                    sex:
+                      $nin:
+                        - sex_o
             result: ilo-unemployment-rate-filtered
 
         -
@@ -450,19 +617,9 @@ cooking:
 
         # group: noc
         -
-            procedure: flatten
-            ingredients:
-                - ilo-noc-indicators
-            options:
-                flatten_dimensions:
-                    - classif1
-                dictionary:
-                    "*": "{concept}"
-            result: ilo-noc-indicators-flattened
-        -
             procedure: translate_column
             ingredients:
-                - ilo-noc-indicators-flattened
+                - ilo-noc-indicators
             options:
                 column: ref_area
                 dictionary:
@@ -502,6 +659,8 @@ cooking:
         -
             procedure: merge
             ingredients:
+                - hours-worked-indicator-datapoints-final
+                - hourly-labour-cost-indicator-datapoints-final
                 - employment-rate-datapoints-final
                 - ilo-labour-force-part-rate-final
                 - ilo-employment-distribution-final
