@@ -473,6 +473,9 @@ cooking:
                             - age_aggregate_y25_54
                             - age_aggregate_y55_64
                             - age_aggregate_yge65
+                    sex:
+                      $nin:
+                        - sex_o
             result: ilo-unemployment-rate-filtered
 
         -
