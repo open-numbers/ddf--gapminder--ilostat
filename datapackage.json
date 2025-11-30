@@ -7,7 +7,7 @@
     "description": "",
     "author": "",
     "license": "",
-    "created": "2025-11-30T08:18:42.463625+00:00",
+    "created": "2025-11-30T08:51:18.736126+00:00",
     "translations": [],
     "resources": [
         {
@@ -739,6 +739,27 @@
                     },
                     {
                         "name": "gdpperemployee_us_inflation_adjusted"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time",
+            "path": "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "gdpperworking_hour_us_inflation_adjusted"
                     }
                 ],
                 "primaryKey": [
@@ -3534,6 +3555,26 @@
                 "value": "gdpperemployee_us_inflation_adjusted",
                 "resources": [
                     "ddf--datapoints--gdpperemployee_us_inflation_adjusted--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "gdpperworking_hour_us_inflation_adjusted",
+                "resources": [
+                    "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdpperworking_hour_us_inflation_adjusted",
+                "resources": [
+                    "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time"
                 ]
             },
             {
