@@ -68,6 +68,7 @@ ingredients:
         key: ref_area, time
         value:
             - gdp_205u_noc_nb
+            - gdp_2hrw_noc_nb
 
     -
         id: ilo-nag-indicators

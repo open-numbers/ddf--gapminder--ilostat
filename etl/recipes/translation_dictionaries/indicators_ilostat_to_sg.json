@@ -4,6 +4,7 @@
   "ees_mnag_noc_rt": "male_salaried_workers_percent_of_non_agricultural_male_employment",
   "ees_tnag_noc_rt": "salaried_workers_percent_of_non_agricultural_employment",
   "gdp_205u_noc_nb": "gdpperemployee_us_inflation_adjusted",
+  "gdp_2hrw_noc_nb": "gdpperworking_hour_us_inflation_adjusted",
   "how_temp_sex_eco_nb": "working_hours_per_week",
   "sex_f_ste_icse93_5_emp_2emp_sex_ste_nb": "female_family_workers_percent_of_female_employment",
   "sex_m_ste_icse93_5_emp_2emp_sex_ste_nb": "male_family_workers_percent_of_male_employment",
@@ -53,5 +54,5 @@
   "sex_t_age_aggregate_yge65_eap_2wap_sex_age_rt": "aged_65plus_labour_force_participation_rate_percent",
   "sex_t_age_ythadult_y15_64_eap_2wap_sex_age_rt": "aged_15_64_labour_force_participation_rate_percent",
   "sex_t_age_ythadult_yge15_eap_2wap_sex_age_rt": "aged_15plus_labour_force_participation_rate_percent",
-  "lac_4hrl_eco_cur_nb": "hourly_labour_cost_constant_2017_usd"
+  "lac_4hrl_eco_cur_nb": "hourly_labour_cost_constant_2021_usd"
 }
