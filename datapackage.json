@@ -1,13 +1,13 @@
 {
     "name": "ddf--gapminder--ilostat",
-    "language": {
-        "id": "en"
-    },
     "title": "ddf--gapminder--ilostat",
     "description": "",
     "author": "",
     "license": "",
-    "created": "2025-12-02T02:44:03.445322+00:00",
+    "language": {
+        "id": "en"
+    },
+    "created": "2025-12-09T00:49:51.269Z",
     "translations": [],
     "resources": [
         {
@@ -72,6 +72,412 @@
                 ],
                 "primaryKey": [
                     "concept"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--country",
+            "path": "ddf--entities--geo--country.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "g77_and_oecd_countries"
+                    },
+                    {
+                        "name": "income_3groups"
+                    },
+                    {
+                        "name": "income_groups"
+                    },
+                    {
+                        "name": "is--country"
+                    },
+                    {
+                        "name": "iso3166_1_alpha2"
+                    },
+                    {
+                        "name": "iso3166_1_alpha3"
+                    },
+                    {
+                        "name": "iso3166_1_numeric"
+                    },
+                    {
+                        "name": "iso3166_2"
+                    },
+                    {
+                        "name": "landlocked"
+                    },
+                    {
+                        "name": "latitude"
+                    },
+                    {
+                        "name": "longitude"
+                    },
+                    {
+                        "name": "main_religion_2008"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "un_sdg_ldc"
+                    },
+                    {
+                        "name": "un_sdg_region"
+                    },
+                    {
+                        "name": "un_state"
+                    },
+                    {
+                        "name": "unhcr_region"
+                    },
+                    {
+                        "name": "unicef_region"
+                    },
+                    {
+                        "name": "unicode_region_subtag"
+                    },
+                    {
+                        "name": "west_and_rest"
+                    },
+                    {
+                        "name": "world_4region"
+                    },
+                    {
+                        "name": "world_6region"
+                    }
+                ],
+                "primaryKey": [
+                    "country"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--g77_and_oecd_countries",
+            "path": "ddf--entities--geo--g77_and_oecd_countries.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "g77_and_oecd_countries"
+                    },
+                    {
+                        "name": "is--g77_and_oecd_countries"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "rank"
+                    }
+                ],
+                "primaryKey": [
+                    "g77_and_oecd_countries"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--global",
+            "path": "ddf--entities--geo--global.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "is--global"
+                    },
+                    {
+                        "name": "latitude"
+                    },
+                    {
+                        "name": "longitude"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "topojson"
+                    },
+                    {
+                        "name": "unicode_region_subtag"
+                    }
+                ],
+                "primaryKey": [
+                    "global"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--income_3groups",
+            "path": "ddf--entities--geo--income_3groups.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "income_3groups"
+                    },
+                    {
+                        "name": "is--income_3groups"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "rank"
+                    }
+                ],
+                "primaryKey": [
+                    "income_3groups"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--income_groups",
+            "path": "ddf--entities--geo--income_groups.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "income_groups"
+                    },
+                    {
+                        "name": "is--income_groups"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "rank"
+                    }
+                ],
+                "primaryKey": [
+                    "income_groups"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--landlocked",
+            "path": "ddf--entities--geo--landlocked.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "landlocked"
+                    },
+                    {
+                        "name": "is--landlocked"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "rank"
+                    }
+                ],
+                "primaryKey": [
+                    "landlocked"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--main_religion_2008",
+            "path": "ddf--entities--geo--main_religion_2008.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "main_religion_2008"
+                    },
+                    {
+                        "name": "is--main_religion_2008"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "rank"
+                    }
+                ],
+                "primaryKey": [
+                    "main_religion_2008"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--un_sdg_ldc",
+            "path": "ddf--entities--geo--un_sdg_ldc.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "un_sdg_ldc"
+                    },
+                    {
+                        "name": "is--un_sdg_ldc"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": [
+                    "un_sdg_ldc"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--un_sdg_region",
+            "path": "ddf--entities--geo--un_sdg_region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "un_sdg_region"
+                    },
+                    {
+                        "name": "color"
+                    },
+                    {
+                        "name": "is--un_sdg_region"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": [
+                    "un_sdg_region"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--unhcr_region",
+            "path": "ddf--entities--geo--unhcr_region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "unhcr_region"
+                    },
+                    {
+                        "name": "is--unhcr_region"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": [
+                    "unhcr_region"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--unicef_region",
+            "path": "ddf--entities--geo--unicef_region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "unicef_region"
+                    },
+                    {
+                        "name": "is--unicef_region"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": [
+                    "unicef_region"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--west_and_rest",
+            "path": "ddf--entities--geo--west_and_rest.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "west_and_rest"
+                    },
+                    {
+                        "name": "is--west_and_rest"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": [
+                    "west_and_rest"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--world_4region",
+            "path": "ddf--entities--geo--world_4region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "world_4region"
+                    },
+                    {
+                        "name": "color"
+                    },
+                    {
+                        "name": "description"
+                    },
+                    {
+                        "name": "is--world_4region"
+                    },
+                    {
+                        "name": "latitude"
+                    },
+                    {
+                        "name": "longitude"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "name_long"
+                    },
+                    {
+                        "name": "name_short"
+                    },
+                    {
+                        "name": "rank"
+                    },
+                    {
+                        "name": "shape_lores_svg"
+                    }
+                ],
+                "primaryKey": [
+                    "world_4region"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--world_6region",
+            "path": "ddf--entities--geo--world_6region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "world_6region"
+                    },
+                    {
+                        "name": "is--world_6region"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "name_long"
+                    },
+                    {
+                        "name": "name_short"
+                    },
+                    {
+                        "name": "rank"
+                    },
+                    {
+                        "name": "shape_lores_svg"
+                    }
+                ],
+                "primaryKey": [
+                    "world_6region"
                 ]
             }
         },
@@ -1292,412 +1698,6 @@
                     "time"
                 ]
             }
-        },
-        {
-            "name": "ddf--entities--geo--country",
-            "path": "ddf--entities--geo--country.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "g77_and_oecd_countries"
-                    },
-                    {
-                        "name": "income_3groups"
-                    },
-                    {
-                        "name": "income_groups"
-                    },
-                    {
-                        "name": "is--country"
-                    },
-                    {
-                        "name": "iso3166_1_alpha2"
-                    },
-                    {
-                        "name": "iso3166_1_alpha3"
-                    },
-                    {
-                        "name": "iso3166_1_numeric"
-                    },
-                    {
-                        "name": "iso3166_2"
-                    },
-                    {
-                        "name": "landlocked"
-                    },
-                    {
-                        "name": "latitude"
-                    },
-                    {
-                        "name": "longitude"
-                    },
-                    {
-                        "name": "main_religion_2008"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "un_sdg_ldc"
-                    },
-                    {
-                        "name": "un_sdg_region"
-                    },
-                    {
-                        "name": "un_state"
-                    },
-                    {
-                        "name": "unhcr_region"
-                    },
-                    {
-                        "name": "unicef_region"
-                    },
-                    {
-                        "name": "unicode_region_subtag"
-                    },
-                    {
-                        "name": "west_and_rest"
-                    },
-                    {
-                        "name": "world_4region"
-                    },
-                    {
-                        "name": "world_6region"
-                    }
-                ],
-                "primaryKey": [
-                    "country"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--g77_and_oecd_countries",
-            "path": "ddf--entities--geo--g77_and_oecd_countries.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "g77_and_oecd_countries"
-                    },
-                    {
-                        "name": "is--g77_and_oecd_countries"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "rank"
-                    }
-                ],
-                "primaryKey": [
-                    "g77_and_oecd_countries"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--global",
-            "path": "ddf--entities--geo--global.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "is--global"
-                    },
-                    {
-                        "name": "latitude"
-                    },
-                    {
-                        "name": "longitude"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "topojson"
-                    },
-                    {
-                        "name": "unicode_region_subtag"
-                    }
-                ],
-                "primaryKey": [
-                    "global"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--income_3groups",
-            "path": "ddf--entities--geo--income_3groups.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "income_3groups"
-                    },
-                    {
-                        "name": "is--income_3groups"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "rank"
-                    }
-                ],
-                "primaryKey": [
-                    "income_3groups"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--income_groups",
-            "path": "ddf--entities--geo--income_groups.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "income_groups"
-                    },
-                    {
-                        "name": "is--income_groups"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "rank"
-                    }
-                ],
-                "primaryKey": [
-                    "income_groups"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--landlocked",
-            "path": "ddf--entities--geo--landlocked.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "landlocked"
-                    },
-                    {
-                        "name": "is--landlocked"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "rank"
-                    }
-                ],
-                "primaryKey": [
-                    "landlocked"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--main_religion_2008",
-            "path": "ddf--entities--geo--main_religion_2008.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "main_religion_2008"
-                    },
-                    {
-                        "name": "is--main_religion_2008"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "rank"
-                    }
-                ],
-                "primaryKey": [
-                    "main_religion_2008"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--un_sdg_ldc",
-            "path": "ddf--entities--geo--un_sdg_ldc.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "un_sdg_ldc"
-                    },
-                    {
-                        "name": "is--un_sdg_ldc"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": [
-                    "un_sdg_ldc"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--un_sdg_region",
-            "path": "ddf--entities--geo--un_sdg_region.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "un_sdg_region"
-                    },
-                    {
-                        "name": "color"
-                    },
-                    {
-                        "name": "is--un_sdg_region"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": [
-                    "un_sdg_region"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--unhcr_region",
-            "path": "ddf--entities--geo--unhcr_region.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "unhcr_region"
-                    },
-                    {
-                        "name": "is--unhcr_region"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": [
-                    "unhcr_region"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--unicef_region",
-            "path": "ddf--entities--geo--unicef_region.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "unicef_region"
-                    },
-                    {
-                        "name": "is--unicef_region"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": [
-                    "unicef_region"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--west_and_rest",
-            "path": "ddf--entities--geo--west_and_rest.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "west_and_rest"
-                    },
-                    {
-                        "name": "is--west_and_rest"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": [
-                    "west_and_rest"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--world_4region",
-            "path": "ddf--entities--geo--world_4region.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "world_4region"
-                    },
-                    {
-                        "name": "color"
-                    },
-                    {
-                        "name": "description"
-                    },
-                    {
-                        "name": "is--world_4region"
-                    },
-                    {
-                        "name": "latitude"
-                    },
-                    {
-                        "name": "longitude"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "name_long"
-                    },
-                    {
-                        "name": "name_short"
-                    },
-                    {
-                        "name": "rank"
-                    },
-                    {
-                        "name": "shape_lores_svg"
-                    }
-                ],
-                "primaryKey": [
-                    "world_4region"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--geo--world_6region",
-            "path": "ddf--entities--geo--world_6region.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "world_6region"
-                    },
-                    {
-                        "name": "is--world_6region"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "name_long"
-                    },
-                    {
-                        "name": "name_short"
-                    },
-                    {
-                        "name": "rank"
-                    },
-                    {
-                        "name": "shape_lores_svg"
-                    }
-                ],
-                "primaryKey": [
-                    "world_6region"
-                ]
-            }
         }
     ],
     "ddfSchema": {
@@ -1859,62 +1859,7 @@
         "entities": [
             {
                 "primaryKey": [
-                    "geo"
-                ],
-                "value": "color",
-                "resources": [
-                    "ddf--entities--geo--un_sdg_region",
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "un_sdg_region"
-                ],
-                "value": "color",
-                "resources": [
-                    "ddf--entities--geo--un_sdg_region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "color",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "description",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "description",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country"
-                ],
-                "value": "g77_and_oecd_countries",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
                 ],
                 "value": "g77_and_oecd_countries",
                 "resources": [
@@ -1932,25 +1877,7 @@
             },
             {
                 "primaryKey": [
-                    "geo"
-                ],
-                "value": "income_3groups",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country"
-                ],
-                "value": "income_groups",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
                 ],
                 "value": "income_groups",
                 "resources": [
@@ -1968,9 +1895,162 @@
             },
             {
                 "primaryKey": [
-                    "geo"
+                    "country"
                 ],
-                "value": "is--country",
+                "value": "iso3166_1_alpha2",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "iso3166_1_alpha3",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "iso3166_1_numeric",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "iso3166_2",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "landlocked",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "latitude",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "longitude",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "main_religion_2008",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "un_sdg_ldc",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "un_sdg_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "un_state",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "unhcr_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "unicef_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "unicode_region_subtag",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "west_and_rest",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "world_4region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "world_6region",
                 "resources": [
                     "ddf--entities--geo--country"
                 ]
@@ -1982,6 +2062,79 @@
                 "value": "is--g77_and_oecd_countries",
                 "resources": [
                     "ddf--entities--geo--g77_and_oecd_countries"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "g77_and_oecd_countries"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--g77_and_oecd_countries"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "g77_and_oecd_countries"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--g77_and_oecd_countries"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "color",
+                "resources": [
+                    "ddf--entities--geo--world_4region",
+                    "ddf--entities--geo--un_sdg_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "description",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "g77_and_oecd_countries",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "income_3groups",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "income_groups",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "is--country",
+                "resources": [
+                    "ddf--entities--geo--country"
                 ]
             },
             {
@@ -2004,15 +2157,6 @@
             },
             {
                 "primaryKey": [
-                    "global"
-                ],
-                "value": "is--global",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "is--income_3groups",
@@ -2022,43 +2166,7 @@
             },
             {
                 "primaryKey": [
-                    "income_3groups"
-                ],
-                "value": "is--income_3groups",
-                "resources": [
-                    "ddf--entities--geo--income_3groups"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "income_groups"
-                ],
-                "value": "is--income_3groups",
-                "resources": [
-                    "ddf--entities--geo--income_3groups"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
-                ],
-                "value": "is--income_groups",
-                "resources": [
-                    "ddf--entities--geo--income_groups"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "income_3groups"
-                ],
-                "value": "is--income_groups",
-                "resources": [
-                    "ddf--entities--geo--income_groups"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "income_groups"
                 ],
                 "value": "is--income_groups",
                 "resources": [
@@ -2076,25 +2184,7 @@
             },
             {
                 "primaryKey": [
-                    "landlocked"
-                ],
-                "value": "is--landlocked",
-                "resources": [
-                    "ddf--entities--geo--landlocked"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
-                ],
-                "value": "is--main_religion_2008",
-                "resources": [
-                    "ddf--entities--geo--main_religion_2008"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "main_religion_2008"
                 ],
                 "value": "is--main_religion_2008",
                 "resources": [
@@ -2112,25 +2202,7 @@
             },
             {
                 "primaryKey": [
-                    "un_sdg_ldc"
-                ],
-                "value": "is--un_sdg_ldc",
-                "resources": [
-                    "ddf--entities--geo--un_sdg_ldc"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
-                ],
-                "value": "is--un_sdg_region",
-                "resources": [
-                    "ddf--entities--geo--un_sdg_region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "un_sdg_region"
                 ],
                 "value": "is--un_sdg_region",
                 "resources": [
@@ -2148,25 +2220,7 @@
             },
             {
                 "primaryKey": [
-                    "unhcr_region"
-                ],
-                "value": "is--unhcr_region",
-                "resources": [
-                    "ddf--entities--geo--unhcr_region"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
-                ],
-                "value": "is--unicef_region",
-                "resources": [
-                    "ddf--entities--geo--unicef_region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "unicef_region"
                 ],
                 "value": "is--unicef_region",
                 "resources": [
@@ -2184,25 +2238,7 @@
             },
             {
                 "primaryKey": [
-                    "west_and_rest"
-                ],
-                "value": "is--west_and_rest",
-                "resources": [
-                    "ddf--entities--geo--west_and_rest"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
-                ],
-                "value": "is--world_4region",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
                 ],
                 "value": "is--world_4region",
                 "resources": [
@@ -2220,36 +2256,9 @@
             },
             {
                 "primaryKey": [
-                    "world_6region"
-                ],
-                "value": "is--world_6region",
-                "resources": [
-                    "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "iso3166_1_alpha2",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "iso3166_1_alpha2",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "iso3166_1_alpha3",
                 "resources": [
                     "ddf--entities--geo--country"
                 ]
@@ -2265,27 +2274,9 @@
             },
             {
                 "primaryKey": [
-                    "country"
-                ],
-                "value": "iso3166_1_numeric",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "iso3166_1_numeric",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "iso3166_2",
                 "resources": [
                     "ddf--entities--geo--country"
                 ]
@@ -2301,15 +2292,6 @@
             },
             {
                 "primaryKey": [
-                    "country"
-                ],
-                "value": "landlocked",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "landlocked",
@@ -2319,48 +2301,12 @@
             },
             {
                 "primaryKey": [
-                    "country"
-                ],
-                "value": "latitude",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "latitude",
                 "resources": [
-                    "ddf--entities--geo--country",
+                    "ddf--entities--geo--world_4region",
                     "ddf--entities--geo--global",
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "global"
-                ],
-                "value": "latitude",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "latitude",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "longitude",
-                "resources": [
                     "ddf--entities--geo--country"
                 ]
             },
@@ -2370,35 +2316,8 @@
                 ],
                 "value": "longitude",
                 "resources": [
-                    "ddf--entities--geo--country",
+                    "ddf--entities--geo--world_4region",
                     "ddf--entities--geo--global",
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "global"
-                ],
-                "value": "longitude",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "longitude",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "main_religion_2008",
-                "resources": [
                     "ddf--entities--geo--country"
                 ]
             },
@@ -2413,42 +2332,187 @@
             },
             {
                 "primaryKey": [
-                    "country"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "g77_and_oecd_countries"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--geo--g77_and_oecd_countries"
-                ]
-            },
-            {
-                "primaryKey": [
                     "geo"
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo--country",
-                    "ddf--entities--geo--g77_and_oecd_countries",
-                    "ddf--entities--geo--global",
-                    "ddf--entities--geo--income_3groups",
-                    "ddf--entities--geo--income_groups",
-                    "ddf--entities--geo--landlocked",
-                    "ddf--entities--geo--main_religion_2008",
-                    "ddf--entities--geo--un_sdg_ldc",
-                    "ddf--entities--geo--un_sdg_region",
-                    "ddf--entities--geo--unhcr_region",
-                    "ddf--entities--geo--unicef_region",
+                    "ddf--entities--geo--world_6region",
+                    "ddf--entities--geo--world_4region",
                     "ddf--entities--geo--west_and_rest",
+                    "ddf--entities--geo--unicef_region",
+                    "ddf--entities--geo--unhcr_region",
+                    "ddf--entities--geo--un_sdg_region",
+                    "ddf--entities--geo--un_sdg_ldc",
+                    "ddf--entities--geo--main_religion_2008",
+                    "ddf--entities--geo--landlocked",
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups",
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--g77_and_oecd_countries",
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "name_long",
+                "resources": [
+                    "ddf--entities--geo--world_6region",
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "name_short",
+                "resources": [
+                    "ddf--entities--geo--world_6region",
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--world_6region",
                     "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--world_6region"
+                    "ddf--entities--geo--main_religion_2008",
+                    "ddf--entities--geo--landlocked",
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups",
+                    "ddf--entities--geo--g77_and_oecd_countries"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "shape_lores_svg",
+                "resources": [
+                    "ddf--entities--geo--world_6region",
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "topojson",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "un_sdg_ldc",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "un_sdg_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "un_state",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "unhcr_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "unicef_region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "unicode_region_subtag",
+                "resources": [
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "west_and_rest",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "world_4region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "world_6region",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "is--global",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "latitude",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "longitude",
+                "resources": [
+                    "ddf--entities--geo--global"
                 ]
             },
             {
@@ -2462,11 +2526,75 @@
             },
             {
                 "primaryKey": [
+                    "global"
+                ],
+                "value": "topojson",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "unicode_region_subtag",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_3groups"
+                ],
+                "value": "is--income_3groups",
+                "resources": [
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_3groups"
+                ],
+                "value": "is--income_groups",
+                "resources": [
+                    "ddf--entities--geo--income_groups"
+                ]
+            },
+            {
+                "primaryKey": [
                     "income_3groups"
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo--income_3groups",
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_3groups"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_groups"
+                ],
+                "value": "is--income_3groups",
+                "resources": [
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_groups"
+                ],
+                "value": "is--income_groups",
+                "resources": [
                     "ddf--entities--geo--income_groups"
                 ]
             },
@@ -2476,8 +2604,27 @@
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo--income_3groups",
-                    "ddf--entities--geo--income_groups"
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "income_groups"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--income_groups",
+                    "ddf--entities--geo--income_3groups"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "landlocked"
+                ],
+                "value": "is--landlocked",
+                "resources": [
+                    "ddf--entities--geo--landlocked"
                 ]
             },
             {
@@ -2491,11 +2638,47 @@
             },
             {
                 "primaryKey": [
+                    "landlocked"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--landlocked"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "main_religion_2008"
+                ],
+                "value": "is--main_religion_2008",
+                "resources": [
+                    "ddf--entities--geo--main_religion_2008"
+                ]
+            },
+            {
+                "primaryKey": [
                     "main_religion_2008"
                 ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--geo--main_religion_2008"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "main_religion_2008"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--main_religion_2008"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "un_sdg_ldc"
+                ],
+                "value": "is--un_sdg_ldc",
+                "resources": [
+                    "ddf--entities--geo--un_sdg_ldc"
                 ]
             },
             {
@@ -2511,9 +2694,36 @@
                 "primaryKey": [
                     "un_sdg_region"
                 ],
+                "value": "color",
+                "resources": [
+                    "ddf--entities--geo--un_sdg_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "un_sdg_region"
+                ],
+                "value": "is--un_sdg_region",
+                "resources": [
+                    "ddf--entities--geo--un_sdg_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "un_sdg_region"
+                ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--geo--un_sdg_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "unhcr_region"
+                ],
+                "value": "is--unhcr_region",
+                "resources": [
+                    "ddf--entities--geo--unhcr_region"
                 ]
             },
             {
@@ -2529,9 +2739,27 @@
                 "primaryKey": [
                     "unicef_region"
                 ],
+                "value": "is--unicef_region",
+                "resources": [
+                    "ddf--entities--geo--unicef_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "unicef_region"
+                ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--geo--unicef_region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "west_and_rest"
+                ],
+                "value": "is--west_and_rest",
+                "resources": [
+                    "ddf--entities--geo--west_and_rest"
                 ]
             },
             {
@@ -2547,6 +2775,51 @@
                 "primaryKey": [
                     "world_4region"
                 ],
+                "value": "color",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "description",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "is--world_4region",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "latitude",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "longitude",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
                 "value": "name",
                 "resources": [
                     "ddf--entities--geo--world_4region"
@@ -2554,6 +2827,51 @@
             },
             {
                 "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "name_long",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "name_short",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "rank",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_4region"
+                ],
+                "value": "shape_lores_svg",
+                "resources": [
+                    "ddf--entities--geo--world_4region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "world_6region"
+                ],
+                "value": "is--world_6region",
+                "resources": [
+                    "ddf--entities--geo--world_6region"
+                ]
+            },
+            {
+                "primaryKey": [
                     "world_6region"
                 ],
                 "value": "name",
@@ -2563,49 +2881,11 @@
             },
             {
                 "primaryKey": [
-                    "geo"
-                ],
-                "value": "name_long",
-                "resources": [
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "name_long",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
                     "world_6region"
                 ],
                 "value": "name_long",
                 "resources": [
                     "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "name_short",
-                "resources": [
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "name_short",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
                 ]
             },
             {
@@ -2619,77 +2899,6 @@
             },
             {
                 "primaryKey": [
-                    "g77_and_oecd_countries"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--g77_and_oecd_countries"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--g77_and_oecd_countries",
-                    "ddf--entities--geo--income_3groups",
-                    "ddf--entities--geo--income_groups",
-                    "ddf--entities--geo--landlocked",
-                    "ddf--entities--geo--main_religion_2008",
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "income_3groups"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--income_3groups",
-                    "ddf--entities--geo--income_groups"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "income_groups"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--income_3groups",
-                    "ddf--entities--geo--income_groups"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "landlocked"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--landlocked"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "main_religion_2008"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--main_religion_2008"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "rank",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
                     "world_6region"
                 ],
                 "value": "rank",
@@ -2699,220 +2908,11 @@
             },
             {
                 "primaryKey": [
-                    "geo"
-                ],
-                "value": "shape_lores_svg",
-                "resources": [
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "world_4region"
-                ],
-                "value": "shape_lores_svg",
-                "resources": [
-                    "ddf--entities--geo--world_4region"
-                ]
-            },
-            {
-                "primaryKey": [
                     "world_6region"
                 ],
                 "value": "shape_lores_svg",
                 "resources": [
                     "ddf--entities--geo--world_6region"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "topojson",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "global"
-                ],
-                "value": "topojson",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "un_sdg_ldc",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "un_sdg_ldc",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "un_sdg_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "un_sdg_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "un_state",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "un_state",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "unhcr_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "unhcr_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "unicef_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "unicef_region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "unicode_region_subtag",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "unicode_region_subtag",
-                "resources": [
-                    "ddf--entities--geo--country",
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "global"
-                ],
-                "value": "unicode_region_subtag",
-                "resources": [
-                    "ddf--entities--geo--global"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "west_and_rest",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "west_and_rest",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "world_4region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "world_4region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country"
-                ],
-                "value": "world_6region",
-                "resources": [
-                    "ddf--entities--geo--country"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo"
-                ],
-                "value": "world_6region",
-                "resources": [
-                    "ddf--entities--geo--country"
                 ]
             }
         ],
@@ -2929,27 +2929,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_15_24_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15_24_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "aged_15_24_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15_24_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "aged_15_24_unemployment_rate_percent",
@@ -2969,27 +2949,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_15_64_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15_64_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "aged_15plus_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15plus_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "aged_15plus_employment_rate_percent",
@@ -3009,27 +2969,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_15plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "aged_15plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_15plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "aged_15plus_unemployment_rate_percent",
@@ -3049,27 +2989,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_25_54_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_25_54_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "aged_25_54_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_25_54_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "aged_25_54_unemployment_rate_percent",
@@ -3089,27 +3009,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_55_64_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_55_64_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "aged_65plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_65plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "aged_65plus_labour_force_participation_rate_percent",
@@ -3129,27 +3029,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "aged_65plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--aged_65plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "agriculture_workers_percent_of_employment",
-                "resources": [
-                    "ddf--datapoints--agriculture_workers_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "agriculture_workers_percent_of_employment",
@@ -3169,27 +3049,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "family_workers_percent_of_employment",
-                "resources": [
-                    "ddf--datapoints--family_workers_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "female_agriculture_workers_percent_of_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_agriculture_workers_percent_of_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "female_agriculture_workers_percent_of_female_employment",
@@ -3209,27 +3069,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "female_family_workers_percent_of_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_family_workers_percent_of_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "female_industry_workers_percent_of_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_industry_workers_percent_of_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "female_industry_workers_percent_of_female_employment",
@@ -3249,27 +3089,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "female_long_term_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--female_long_term_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "female_salaried_workers_percent_of_non_agricultural_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_salaried_workers_percent_of_non_agricultural_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "female_salaried_workers_percent_of_non_agricultural_female_employment",
@@ -3289,27 +3109,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "female_self_employed_percent_of_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_self_employed_percent_of_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "female_service_workers_percent_of_female_employment",
-                "resources": [
-                    "ddf--datapoints--female_service_workers_percent_of_female_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "female_service_workers_percent_of_female_employment",
@@ -3329,27 +3129,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_15_24_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15_24_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "females_aged_15_24_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15_24_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "females_aged_15_24_unemployment_rate_percent",
@@ -3369,27 +3149,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_15_64_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15_64_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "females_aged_15plus_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15plus_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "females_aged_15plus_employment_rate_percent",
@@ -3409,27 +3169,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_15plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "females_aged_15plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_15plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "females_aged_15plus_unemployment_rate_percent",
@@ -3449,27 +3189,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_25_54_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_25_54_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "females_aged_25_54_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_25_54_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "females_aged_25_54_unemployment_rate_percent",
@@ -3489,27 +3209,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_55_64_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_55_64_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "females_aged_65plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_65plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "females_aged_65plus_labour_force_participation_rate_percent",
@@ -3529,27 +3229,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "females_aged_65plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--females_aged_65plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "gdpperemployee_us_inflation_adjusted",
-                "resources": [
-                    "ddf--datapoints--gdpperemployee_us_inflation_adjusted--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "gdpperemployee_us_inflation_adjusted",
@@ -3569,27 +3249,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "gdpperworking_hour_us_inflation_adjusted",
-                "resources": [
-                    "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "hourly_labour_cost_constant_2021_usd",
-                "resources": [
-                    "ddf--datapoints--hourly_labour_cost_constant_2021_usd--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "hourly_labour_cost_constant_2021_usd",
@@ -3609,27 +3269,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "industry_workers_percent_of_employment",
-                "resources": [
-                    "ddf--datapoints--industry_workers_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "long_term_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--long_term_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "long_term_unemployment_rate_percent",
@@ -3649,27 +3289,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "male_agriculture_workers_percent_of_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_agriculture_workers_percent_of_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "male_family_workers_percent_of_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_family_workers_percent_of_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "male_family_workers_percent_of_male_employment",
@@ -3689,27 +3309,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "male_industry_workers_percent_of_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_industry_workers_percent_of_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "male_long_term_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--male_long_term_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "male_long_term_unemployment_rate_percent",
@@ -3729,27 +3329,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "male_salaried_workers_percent_of_non_agricultural_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_salaried_workers_percent_of_non_agricultural_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "male_self_employed_percent_of_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_self_employed_percent_of_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "male_self_employed_percent_of_male_employment",
@@ -3769,27 +3349,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "male_service_workers_percent_of_male_employment",
-                "resources": [
-                    "ddf--datapoints--male_service_workers_percent_of_male_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_15_24_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15_24_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_15_24_employment_rate_percent",
@@ -3809,27 +3369,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "males_aged_15_24_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15_24_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_15_64_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15_64_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_15_64_labour_force_participation_rate_percent",
@@ -3849,27 +3389,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "males_aged_15plus_employment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15plus_employment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_15plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_15plus_labour_force_participation_rate_percent",
@@ -3889,27 +3409,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "males_aged_15plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_15plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_25_54_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_25_54_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_25_54_labour_force_participation_rate_percent",
@@ -3929,27 +3429,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "males_aged_25_54_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_25_54_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_55_64_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_55_64_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_55_64_unemployment_rate_percent",
@@ -3969,27 +3449,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "males_aged_65plus_labour_force_participation_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_65plus_labour_force_participation_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "males_aged_65plus_unemployment_rate_percent",
-                "resources": [
-                    "ddf--datapoints--males_aged_65plus_unemployment_rate_percent--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "males_aged_65plus_unemployment_rate_percent",
@@ -4009,16 +3469,6 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "salaried_workers_percent_of_non_agricultural_employment",
-                "resources": [
-                    "ddf--datapoints--salaried_workers_percent_of_non_agricultural_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
                     "time"
                 ],
@@ -4029,27 +3479,7 @@
             },
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
-                ],
-                "value": "self_employed_percent_of_employment",
-                "resources": [
-                    "ddf--datapoints--self_employed_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
                     "country",
-                    "time"
-                ],
-                "value": "service_workers_percent_of_employment",
-                "resources": [
-                    "ddf--datapoints--service_workers_percent_of_employment--by--geo--time"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "geo",
                     "time"
                 ],
                 "value": "service_workers_percent_of_employment",
@@ -4065,6 +3495,576 @@
                 "value": "working_hours_per_week",
                 "resources": [
                     "ddf--datapoints--working_hours_per_week--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15_24_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15_24_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15_24_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15_24_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15_64_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15_64_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15plus_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15plus_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_15plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_15plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_25_54_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_25_54_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_25_54_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_25_54_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_55_64_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_55_64_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_65plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_65plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_65plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--aged_65plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "agriculture_workers_percent_of_employment",
+                "resources": [
+                    "ddf--datapoints--agriculture_workers_percent_of_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "family_workers_percent_of_employment",
+                "resources": [
+                    "ddf--datapoints--family_workers_percent_of_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_agriculture_workers_percent_of_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_agriculture_workers_percent_of_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_family_workers_percent_of_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_family_workers_percent_of_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_industry_workers_percent_of_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_industry_workers_percent_of_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_long_term_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--female_long_term_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_salaried_workers_percent_of_non_agricultural_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_salaried_workers_percent_of_non_agricultural_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_self_employed_percent_of_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_self_employed_percent_of_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_service_workers_percent_of_female_employment",
+                "resources": [
+                    "ddf--datapoints--female_service_workers_percent_of_female_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15_24_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15_24_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15_24_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15_24_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15_64_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15_64_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15plus_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15plus_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_15plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_15plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_25_54_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_25_54_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_25_54_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_25_54_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_55_64_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_55_64_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_65plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_65plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "females_aged_65plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--females_aged_65plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdpperemployee_us_inflation_adjusted",
+                "resources": [
+                    "ddf--datapoints--gdpperemployee_us_inflation_adjusted--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdpperworking_hour_us_inflation_adjusted",
+                "resources": [
+                    "ddf--datapoints--gdpperworking_hour_us_inflation_adjusted--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "hourly_labour_cost_constant_2021_usd",
+                "resources": [
+                    "ddf--datapoints--hourly_labour_cost_constant_2021_usd--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "industry_workers_percent_of_employment",
+                "resources": [
+                    "ddf--datapoints--industry_workers_percent_of_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "long_term_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--long_term_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_agriculture_workers_percent_of_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_agriculture_workers_percent_of_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_family_workers_percent_of_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_family_workers_percent_of_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_industry_workers_percent_of_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_industry_workers_percent_of_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_long_term_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--male_long_term_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_salaried_workers_percent_of_non_agricultural_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_salaried_workers_percent_of_non_agricultural_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_self_employed_percent_of_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_self_employed_percent_of_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_service_workers_percent_of_male_employment",
+                "resources": [
+                    "ddf--datapoints--male_service_workers_percent_of_male_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15_24_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15_24_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15_24_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15_24_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15_64_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15_64_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15plus_employment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15plus_employment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_15plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_15plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_25_54_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_25_54_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_25_54_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_25_54_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_55_64_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_55_64_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_65plus_labour_force_participation_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_65plus_labour_force_participation_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "males_aged_65plus_unemployment_rate_percent",
+                "resources": [
+                    "ddf--datapoints--males_aged_65plus_unemployment_rate_percent--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "salaried_workers_percent_of_non_agricultural_employment",
+                "resources": [
+                    "ddf--datapoints--salaried_workers_percent_of_non_agricultural_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "self_employed_percent_of_employment",
+                "resources": [
+                    "ddf--datapoints--self_employed_percent_of_employment--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "service_workers_percent_of_employment",
+                "resources": [
+                    "ddf--datapoints--service_workers_percent_of_employment--by--geo--time"
                 ]
             },
             {
