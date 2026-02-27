@@ -91,7 +91,7 @@ ingredients:
         dataset: open-numbers/ddf--ilo--ilostat
         key: ref_area, time, classif1, classif2
         value:
-            - lac_4hrl_eco_cur_nb
+            - lac_xees_eco_cur_nb
 
     -
         id: ilo-ref_area
