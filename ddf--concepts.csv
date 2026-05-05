@@ -12,7 +12,7 @@ aged_65plus_labour_force_participation_rate_percent,,measure,,,,,,,,,,,,,,,
 aged_65plus_unemployment_rate_percent,,measure,,,,,,,,,,,,,,,
 agriculture_workers_percent_of_employment,,measure,,,,,,,,,,,,,,,
 color,,string,,,,,,,Color,,,,,,,_none,
-country,,entity_set,,,geo,"[""world_6region"", ""income_groups"", ""landlocked"", ""g77_and_oecd_countries"", ""main_religion_2008"", ""world_4region"", ""unicef_region"", ""un_sdg_ldc"", ""un_sdg_region""]",,,Country,,,,,,,categorizations,
+country,,entity_set,,,geo,world_6region income_groups landlocked g77_and_oecd_countries main_religion_2008 world_4region unicef_region un_sdg_ldc un_sdg_region,,,Country,,,,,,,categorizations,
 description,,string,,,,,,,Description,,,,,,,_none,
 description_long,,string,,,,,,,Description Long Text,,,,,,,_none,
 domain,,string,,,,,,,Domain,,,,,,,_none,
@@ -52,9 +52,9 @@ iso3166_1_alpha3,,string,,,,,,http://www.iso.org/iso/home/standards/country_code
 iso3166_1_numeric,,string,,,,,,http://www.iso.org/iso/home/standards/country_codes.htm,ISO 3166-1 numeric,,,,,,,_none,
 iso3166_2,,string,,,,,,https://en.wikipedia.org/wiki/ISO_3166-2,ISO 3166-2,,,,,,,_none,
 landlocked,"{""palette"": {""landlocked"": ""#f05656"", ""coastline"": ""#7487ef""}}",entity_set,,,geo,,,https://docs.google.com/spreadsheet/pub?key=rBwKBodk7Y08pGiA4OAfzUA,Landlocked,,,,,,,categorizations,
-latitude,,measure,,,,,,,Latitude,,,"[""linear""]",,,,_none,degrees
+latitude,,measure,,,,,,,Latitude,,,linear,,,,_none,degrees
 long_term_unemployment_rate_percent,,measure,,,,,,,,,,,,,,,
-longitude,,measure,,,,,,,Longitude,,,"[""linear""]",,,,_none,degrees
+longitude,,measure,,,,,,,Longitude,,,linear,,,,_none,degrees
 main_religion_2008,"{""palette"": {""muslim"": ""#71c44c"", ""christian"": ""#7487ef"", ""eastern_religions"": ""#f05656""}, ""selectable"": false}",entity_set,,,geo,,,https://docs.google.com/spreadsheet/pub?key=0ArtujvvFrPjVdHUzTGVicFJZQ1NjaFhqelV5SDNxMVE,Main religion 2008,,,,,,,categorizations,
 male_agriculture_workers_percent_of_male_employment,,measure,,,,,,,,,,,,,,,
 male_family_workers_percent_of_male_employment,,measure,,,,,,,,,,,,,,,
